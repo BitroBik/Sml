@@ -5,6 +5,6 @@ setup(
     version='0.1',
     packages=find_packages(),
     setup_requires=[
-        'pip>=3.1.1',
+        'pip>=3.11',
     ],
 )
