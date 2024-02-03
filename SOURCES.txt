@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Source/PyXml.py
+Source/__init__.py
+pyxml.egg-info/PKG-INFO
+pyxml.egg-info/SOURCES.txt
+pyxml.egg-info/dependency_links.txt
+pyxml.egg-info/top_level.txt
