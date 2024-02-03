@@ -4,4 +4,4 @@
 
 ### What does PyXml mean
 
-PyXml stand for ** Python eXtensible markup language **
+PyXml stand for **Python eXtensible markup language**
