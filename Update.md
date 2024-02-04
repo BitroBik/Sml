@@ -13,6 +13,6 @@
 - Added Up {Class-Args}
 - Added Up {Function-Args}
 - Added ErrorHandle {Bug}
-- Edited Code.__init__ {Class}
+- Edited Code.__init __ {Class}
 - Edited process {Function}
 - Remove Processing Bug {Bug}
