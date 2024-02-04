@@ -1,12 +1,12 @@
-# PyXml
+# PXML
 
 ## About
 
-PyXml is a Python library designed to facilitate the creation and manipulation of XML-like structures in a straightforward manner.
+PXML is a Python library designed to facilitate the creation and manipulation of XML-like structures in a straightforward manner.
 
-### What does PyXml mean?
+### What does PXMl mean?
 
-PyXml stands for **Python eXtensible Markup Language**.
+PXML stands for **Python eXtensible Markup Language**.
 
 ### Usage Example
 
@@ -15,7 +15,7 @@ Let's see how to use PyXml to create a structured XML-like document:
 ```python
 from PyXml import pyxml as px
 
-# Define PyXml elements
+# Define PXML elements
 Fork = px.Text('Fork - Stab the food')
 Spoon = px.Text('Spoon - Get the food')
 Mirror = px.Text('Mirror - To look to yourself')
@@ -35,9 +35,9 @@ BookStore = px.Tag('Book Store', [CashRegister, Shelf])
 
 City = px.Tag('Neyo City', [BookStore, House])
 
-# Create a PyXml code instance and run it
+# Create a PXML code instance and run it
 Xml = px.Code([City])
 Xml.Run()
 ```
 
-This code will generate a structured PyXml document representing a fictional city with a bookstore and a house.
+This code will generate a structured PXML document representing a fictional city with a bookstore and a house.
