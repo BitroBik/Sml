@@ -36,7 +36,7 @@ BookStore = px.Tag('Book Store', [CashRegister, Shelf])
 City = px.Tag('Neyo City', [BookStore, House])
 
 # Create a PXML code instance and run it
-Xml = px.Code([City])
+Xml = px.Code('Xml', [City])
 Xml.Run()
 ```
 
@@ -49,7 +49,7 @@ Name = px.Entry('Name - ', 'Your Name: ')
 
 Info = px.Tag('Database', [Name])
 
-Xml = px.Code([Info])
+Xml = px.Code('Xml', [Info])
 Xml.Run()
 ```
 
