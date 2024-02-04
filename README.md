@@ -45,12 +45,17 @@ This code will generate a structured PXML document representing a fictional city
 ```python
 from PyXml import pyxml as px
 
+# Define PXML elements
 Name = px.Entry('Name - ', 'Your Name: ')
 
 Info = px.Tag('Database', [Name])
 
+# Create a PXML code instance and run it
 Xml = px.Code('Xml', [Info])
 Xml.Run()
 ```
 
+``` Output
+
+```
 This code present the new class name Entry and how it work and generated.
