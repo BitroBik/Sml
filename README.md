@@ -39,7 +39,7 @@ City = px.Tag('Neyo City', [BookStore, House])
 Xml = px.Code('Xml', [City])
 Xml.Run()
 ```
-
+**Output**
 ```Output
 Neyo City
   Book Store
@@ -72,7 +72,7 @@ Info = px.Tag('Database', [Name])
 Xml = px.Code('Xml', [Info])
 Xml.Run()
 ```
-
+**Output**
 ```Output
 Your Name: Bitro
 
