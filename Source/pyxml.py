@@ -3,13 +3,20 @@ def process(content, up, indent=''):
 
     for c in content:
         if c.type == 'Tag':
-            process_data += f'\n{indent}{c.name}'
-            process_data += process(c.content, up, f'{indent}{up}')
+            if c.attributes == '':
+                process_data += f'\n{indent}{c.name}'
+                process_data += process(c.content, up, f'{indent}{up}')
+            else:
+                process_data += f'\n{indent}{c.name}[{c.attributes}]'
+                process_data += process(c.content, up, f'{indent}{up}')
         elif c.type == 'Entry':
             process_data += f'\n{indent}{c.name}{input(c.text)}'
             print('')
         elif c.type == 'Text':
-            process_data += f'\n{indent}{c.text}'
+            if c.attributes == '':
+                process_data += f'\n{indent}{c.text}'
+            else:
+                process_data += f'\n{indent}{c.text}[{c.attributes}]'
         elif c.type == 'Code':
             process_data = 'Cannot Nest Code only Tag'
             break
@@ -17,9 +24,10 @@ def process(content, up, indent=''):
     return process_data
 
 class Tag:
-    def __init__(self, name, content=[]):
+    def __init__(self, name, content=[], attributes=''):
         self.name = name
         self.content = content
+        self.attributes = attributes
         self.type = 'Tag'
 
 class Entry:
@@ -29,8 +37,9 @@ class Entry:
         self.type = 'Entry'
     
 class Text:
-    def __init__(self, text):
+    def __init__(self, text, attributes=''):
         self.text = text
+        self.attributes = attributes
         self.type = 'Text'
 
 class Code:
