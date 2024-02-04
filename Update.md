@@ -8,3 +8,6 @@
 - Added Entry {Class}
 - Edited process {Function}
 - Input Update {Custom Name}
+
+## 1.2
+- Error Update {Custom Name}
