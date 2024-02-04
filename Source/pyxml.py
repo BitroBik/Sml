@@ -1,13 +1,16 @@
 def process(content, indent=''):
     process_data = ''
-    
+
     for c in content:
         if c.type == 'Tag':
             process_data += f'\n{indent}{c.name}'
             process_data += process(c.content, f'{indent}  ')
-        else:
+        elif c.type == 'Entry':
+            process_data += f'\n{indent}{c.name}{input(c.text)}'
+            print('')
+        elif c.type == 'Text':
             process_data += f'\n{indent}{c.text}'
-    
+
     return process_data
 
 class Tag:
@@ -16,6 +19,12 @@ class Tag:
         self.content = content
         self.type = 'Tag'
 
+class Entry:
+    def __init__(self, name, text):
+        self.name = name
+        self.text = text
+        self.type = 'Entry'
+    
 class Text:
     def __init__(self, text):
         self.text = text
