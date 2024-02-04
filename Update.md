@@ -16,3 +16,9 @@
 - Edited Code.__init __ {Class}
 - Edited process {Function}
 - Remove Processing Bug {Bug}
+
+## 1.1.2
+- Added Attributes {Class - Args}
+- Edited Tag, Text {Class}
+- Edited process {Function}
+
