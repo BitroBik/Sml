@@ -40,6 +40,24 @@ Xml = px.Code('Xml', [City])
 Xml.Run()
 ```
 
+```Output
+Neyo City
+  Book Store
+    Cash Register
+      Cash -  Currency
+      Coin - Currency
+    Shelf
+      Sea - A book name Sea
+      Land - A book name Land
+  House
+    Bedroom
+      Bed - Where would you sleep
+      Mirror - To look to yourself
+    Kitchen
+      Spoon - Get the food
+      Fork - Stab the food
+```
+
 This code will generate a structured PXML document representing a fictional city with a bookstore and a house.
 
 ```python
@@ -55,7 +73,11 @@ Xml = px.Code('Xml', [Info])
 Xml.Run()
 ```
 
-``` Output
+```Output
+Your Name: Bitro
 
+Database
+  Name - Bitro
 ```
+
 This code present the new class name Entry and how it work and generated.
