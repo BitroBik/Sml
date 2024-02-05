@@ -18,7 +18,16 @@
 - Remove Processing Bug {Bug}
 
 ## 1.1.2
-- Added Attributes {Class - Args}
+- Added Attributes {Class-Args}
 - Edited Tag, Text {Class}
 - Edited process {Function}
+
+## 1.2.0
+- Added Code.Turn_Xml {Class-Function}
+- Added Xmlified {Function}
+- Added ErrorHandle {Bug}
+- Edited Attribute {Class-Args}
+- Edited Tag, Text {Class}
+- Remove Content Bug {Bug}
+- Attribute And Xml Update {Custom Name}
 
