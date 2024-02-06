@@ -19,6 +19,13 @@ def process(content, up, indent=''):
             else:
                 for key in c.attribute:
                     process_data += f'\n{indent}{c.text}[{key}="{c.attribute[key]}"]'
+        elif c.type == 'Condition':
+            if c.condition:
+               if c.attribute == {}:
+                   process_data += f'\n{indent}{c.text}'
+               else:
+                   for key in c.attribute:
+                       process_data += f'\n{indent}{c.text}[{key}="{c.attribute[key]}"]'              
         elif c.type == 'Code':
             process_data = 'Cannot Nest Code only Tag'
             break
@@ -49,6 +56,14 @@ def Xmlified(content, indent=''):
             else:
                 for key in c.attribute:
                     process_data += f'\n{indent}<{c.name} {key}="{c.attribute[key]}>{c.text}</{c.name}>"'
+        elif c.type == 'Condition':
+            if c.condition:
+                if c.attribute == {}:
+                    process_data += f'\n{indent}<{c.name}>{c.text}</{c.name}>'
+                else:
+                    for key in c.attribute:
+                        process_data += f'\n{indent}<{c.name} {key}="{c.attribute[key]}>{c.text}</{c.name}>"'
+                    
     return process_data
 
 class Tag:
@@ -85,7 +100,20 @@ class Text:
             pass
         else:
             self.attribute = {'Error':'self.attribute must be on a dictionary'}
-                
+
+class Condition:
+    def __init__(self, name, text, condition, attribute={}):
+        self.name = name
+        self.text = text
+        self.condition = condition
+        self.attribute = attribute
+        self.type = 'Condition'
+        
+        if isinstance(self.attribute, dict):
+            pass
+        else:
+            self.attribute = {'Error':'self.attribute must be on a dictionary'}
+                                      
 class Code:
     def __init__(self, name, content, up='  '):
         self.name = name
