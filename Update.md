@@ -31,3 +31,7 @@
 - Remove Content Bug {Bug}
 - Attribute And Xml Update {Custom Name}
 
+## 1.2.1
+- Added Condition {Class}
+- Edited process, Xmlified {Function}
+
