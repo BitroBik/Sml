@@ -35,3 +35,6 @@
 - Added Condition {Class}
 - Edited process, Xmlified {Function}
 
+## 1.3.0
+- Coming Up On Sunday
+
