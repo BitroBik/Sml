@@ -1,41 +1,41 @@
-# PXML
+# SML
 
 ## About
 
-PXML is a Python library designed to facilitate the creation and manipulation of XML-like structures in a straightforward manner.
+SML is a Python library designed to facilitate the creation and manipulation of XML-like structures in a straightforward manner.
 
-### What does PXMl mean?
+### What does SMl mean?
 
-PXML stands for **Python eXtensible Markup Language**.
+SML stands for **Structure Markup Language**.
 
 ### Usage Example
 
-Let's see how to use PyXml to create a structured XML-like document:
+Let's see how to use SML to create a structured XML-like document:
 
 ```python
-from PyXml import pyxml as px
+from Sml import sml as sm
 
-# Define PXML elements
-Fork = px.Text('Fork', 'Stab the food')
-Spoon = px.Text('Spoon', 'Get the food')
-Mirror = px.Text('Mirror', 'To look to yourself')
-Bed = px.Text('Bed', 'Where would you sleep')
-Land = px.Text('Land', 'a book name Land')
-Sea = px.Text('Sea', 'A book name Sea')
-Coin = px.Text('Coin', 'Currency')
-Cash = px.Text('Cash', 'Currency')
+# Define SML elements
+Fork = sm.Text('Fork', 'Stab the food')
+Spoon = sm.Text('Spoon', 'Get the food')
+Mirror = sm.Text('Mirror', 'To look to yourself')
+Bed = sm.Text('Bed', 'Where would you sleep')
+Land = sm.Text('Land', 'a book name Land')
+Sea = sm.Text('Sea', 'A book name Sea')
+Coin = sm.Text('Coin', 'Currency')
+Cash = sm.Text('Cash', 'Currency')
 
-Kitchen = px.Tag('Kitchen', [Fork, Spoon])
-Bedroom = px.Tag('Bedroom', [Bed, Mirror])
-Shelf = px.Tag('Shelf', [Sea, Land])
-CashRegister = px.Tag('Cash Register', [Cash, Coin])
+Kitchen = sm.Tag('Kitchen', [Fork, Spoon])
+Bedroom = sm.Tag('Bedroom', [Bed, Mirror])
+Shelf = sm.Tag('Shelf', [Sea, Land])
+CashRegister = sm.Tag('Cash Register', [Cash, Coin])
 
-House = px.Tag('House', [Bedroom, Kitchen])
-BookStore = px.Tag('Book Store', [CashRegister, Shelf])
+House = sm.Tag('House', [Bedroom, Kitchen])
+BookStore = sm.Tag('Book Store', [CashRegister, Shelf])
 
-City = px.Tag('Neyo City', [BookStore, House])
+City = sm.Tag('Neyo City', [BookStore, House])
 
-# Create a PXML code instance and run it
+# Create a SML code instance and run it
 Xml = px.Code('Xml', [City])
 Xml.Run()
 ```
@@ -58,17 +58,17 @@ Neyo City
       Fork - Stab the food
 ```
 
-This code will generate a structured PXML document representing a fictional city with a bookstore and a house.
+This code will generate a structured representing a fictional city with a bookstore and a house.
 
 ```python
-from PyXml import pyxml as px
+from Sml import sml as sm
 
-# Define PXML elements
-Name = px.Entry('Name - ', 'Your Name: ')
+# Define SML elements
+Name = sm.Entry('Name - ', 'Your Name: ')
 
-Info = px.Tag('Database', [Name])
+Info = sm.Tag('Database', [Name])
 
-# Create a PXML code instance and run it
+# Create a SML code instance and run it
 Xml = px.Code('Xml', [Info])
 Xml.Run()
 ```
@@ -84,8 +84,5 @@ This code present the new class name Entry and how it work and generated.
 
 ## More Usage Examle
 
-Wiki:
-[Pyxml Wiki](https://pyxmlwiki.w3spaces.com/)
-
-YouTube
-[BitroBik](https://youtube.com/@CorgiPet?si=ecg-tNkkvXfZoT_J)
+YouTube:
+[BitroBik](https://youtube.com/@Bitrobik)
