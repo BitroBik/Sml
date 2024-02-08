@@ -69,7 +69,7 @@ Name = sm.Entry('Name - ', 'Your Name: ')
 Info = sm.Tag('Database', [Name])
 
 # Create a SML code instance and run it
-Xml = px.Code('Xml', [Info])
+Xml = sm.Code('Xml', [Info])
 Xml.Run()
 ```
 **Output**
