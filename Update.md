@@ -36,5 +36,13 @@
 - Edited process, Xmlified {Function}
 
 ## 1.3.0
-- Coming Up On Sunday
+- Added find, Filtering {Function}
+- Added Hidden, Filter {Class}
+- Added XmlIndentation {Bug}
+- Added ErrorHandle {Bug}
+- Added Find, Filter_Content {Class-Args}
+- Edited Process, Pyfied {Function}
+- Edited Xmfied {Function}
+- Deleted CodeNestError {Bug}
+- Utility Update {Custom Name}
 
