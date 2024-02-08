@@ -16,14 +16,14 @@ Let's see how to use PyXml to create a structured XML-like document:
 from PyXml import pyxml as px
 
 # Define PXML elements
-Fork = px.Text('Fork - Stab the food')
-Spoon = px.Text('Spoon - Get the food')
-Mirror = px.Text('Mirror - To look to yourself')
-Bed = px.Text('Bed - Where would you sleep')
-Land = px.Text('Land - a book name Land')
-Sea = px.Text('Sea - A book name Sea')
-Coin = px.Text('Coin - Currency')
-Cash = px.Text('Cash - Currency')
+Fork = px.Text('Fork', 'Stab the food')
+Spoon = px.Text('Spoon', 'Get the food')
+Mirror = px.Text('Mirror', 'To look to yourself')
+Bed = px.Text('Bed', 'Where would you sleep')
+Land = px.Text('Land', 'a book name Land')
+Sea = px.Text('Sea', 'A book name Sea')
+Coin = px.Text('Coin', 'Currency')
+Cash = px.Text('Cash', 'Currency')
 
 Kitchen = px.Tag('Kitchen', [Fork, Spoon])
 Bedroom = px.Tag('Bedroom', [Bed, Mirror])
